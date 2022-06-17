@@ -1,10 +1,9 @@
-# Practicing Custom Hooks!
+# Shopping List 🍉🍓🍅
 
 Work in progress ⛏
 
-Practicing Custom Hooks with **React.JS**
+Practicing **React.JS**
 
-### 🚀🚀🚀🚀🚀
 
 - [LinkedIn](https://www.linkedin.com/in/laura-portillo-rodr%C3%ADguez-21965a86/)
 - [GitHub](https://github.com/lauraportillo)
