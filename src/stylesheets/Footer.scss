@@ -1,0 +1,39 @@
+@import 'Variables';
+@import 'Mixins';
+
+.footer {
+  @include flex();
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-family: $typo2;
+  font-weight: 200;
+}
+.footer__item {
+  text-transform: uppercase;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.icon {
+  color: $color5;
+}
+
+.icon:hover {
+  color: $color3;
+  transform: scale(1.2);
+  transition: all 0.1s ease-in-out;
+}
+
+@media all and (min-width: 768px) {
+  .footer {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .footer__item {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+@media all and (min-width: 1280px) {
+}
