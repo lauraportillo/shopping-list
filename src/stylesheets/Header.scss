@@ -1,0 +1,13 @@
+@import 'Variables';
+@import 'Mixins';
+
+.containerHeader{
+    @include flexColumn();
+    margin-top: 20px;
+}
+.containerHeader__title{
+    font-size: 20px;
+}
+.containerHeader__subtitle{
+    margin-top: 10px; 
+}

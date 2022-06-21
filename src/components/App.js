@@ -8,11 +8,11 @@ import '../stylesheets/Reset.scss';
 
 
 function App() {
-  return <>
+  return <div className="container">
     <Header />
     <List />
     <Footer />
-  </>;
+  </div>;
 }
 
 export default App;

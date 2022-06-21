@@ -1,11 +1,13 @@
 import React from 'react'
+// Styles
+import '../stylesheets/Header.scss';
 
 function Header() {
     return (
-        <>
-            <h1>shopping</h1>
-            <h2>don't forget anything</h2>
-        </>
+        <header className="containerHeader">
+            <h1 className="containerHeader__title">shopping</h1>
+            <h2 className="containerHeader__subtitle">buying these items!</h2>
+        </header>
     )
 }
 
