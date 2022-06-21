@@ -10,8 +10,6 @@ import '../stylesheets/App.scss';
 import '../stylesheets/Reset.scss';
 
 
-
-
 function App() {
 
   const [items, setItems] = useState([
@@ -25,7 +23,7 @@ function App() {
 
     <main className="containerMain">
       <InputItem />
-      <ListItem />
+      <ListItem items={items} />
     </main>
 
     <Footer />
