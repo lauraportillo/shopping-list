@@ -1,15 +1,14 @@
 // React
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight, faChevronLeft, faCircle, faCheckCircle, faPlus } from '@fortawesome/free-solid-svg-icons';
 // Components
 import Header from './Header';
 import InputItem from './InputItem';
-import List from './List';
+import ListItem from './ListItem';
 import Footer from './Footer';
 // Styles
 import '../stylesheets/App.scss';
 import '../stylesheets/Reset.scss';
+
 
 
 
@@ -23,8 +22,12 @@ function App() {
 
   return <div className="container">
     <Header />
-    <InputItem />
-    <List />
+
+    <main className="containerMain">
+      <InputItem />
+      <ListItem />
+    </main>
+
     <Footer />
   </div>;
 }
