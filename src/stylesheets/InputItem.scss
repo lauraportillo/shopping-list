@@ -1,0 +1,7 @@
+@import 'Variables';
+@import 'Mixins';
+
+.containerInputItem{
+    @include flex();
+    margin-top: 20px;
+}
