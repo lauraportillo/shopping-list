@@ -1,8 +1,11 @@
-import React from 'react'
+// Styles
+import '../stylesheets/List.scss';
 
 function List() {
     return (
-        <div>List</div>
+        <div className="containerList">
+            List
+        </div>
     )
 }
 
