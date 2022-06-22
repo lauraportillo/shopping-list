@@ -4,14 +4,19 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
 // Styles
 import '../stylesheets/InputItem.scss';
 
-function InputItem() {
+function InputItem({ handleAddItem, inputValue, setInputValue }) {
+
+
     return (
         <div className='containerInputItem'>
-            <input className='add-item-input' placeholder='Add an item...' />
-            <FontAwesomeIcon icon={faPlus} />
+            <input
+                className='containerInputItem__input'
+                type="text"
+                placeholder='Add an item...'
+                value={inputValue}
+                onChange={(ev) => setInputValue(ev.target.value)} />
 
-            {/* <input value={inputValue} onChange={(event) => setInputValue(event.target.value)} className='add-item-input' placeholder='Add an item...' />
-            <FontAwesomeIcon icon={faPlus} onClick={() => handleAddButtonClick()} /> */}
+            <FontAwesomeIcon icon={faPlus} onClick={handleAddItem} />
         </div>
     )
 }

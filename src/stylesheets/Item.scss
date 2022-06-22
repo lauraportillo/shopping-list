@@ -2,7 +2,6 @@
 @import 'Mixins';
 
 .containerItem{
-    @include flexColumn();
-    color: red;
+    @include flex();
     margin-top: 20px;
 }

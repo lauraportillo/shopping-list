@@ -9,3 +9,7 @@
   .containerMain{
     margin-top: 50px;
   }
+  .containerMain__total{
+    @include flex();
+    margin-top: 20px;
+  }
