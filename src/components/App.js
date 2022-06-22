@@ -21,8 +21,6 @@ function App() {
   const [inputValue, setInputValue] = useState('');
   // const [totalItemCount, setTotalItemCount] = useState(6);
 
-
-
   const handleAddItem = () => {
     const newItem = {
       itemName: inputValue,
