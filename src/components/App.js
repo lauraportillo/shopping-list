@@ -12,14 +12,15 @@ import '../stylesheets/Reset.scss';
 
 function App() {
 
-  // state
+  // STATE
+  // tal vez quitamos la cantidad del objeto (VER)
   const [items, setItems] = useState([
     { itemName: 'item 1', quantity: 1, isSelected: false },
     { itemName: 'item 2', quantity: 3, isSelected: true },
     { itemName: 'item 3', quantity: 2, isSelected: false },
   ]);
   const [inputValue, setInputValue] = useState('');
-  // const [totalItemCount, setTotalItemCount] = useState(6);
+  const [totalItemCount, setTotalItemCount] = useState(6);
 
   const handleAddItem = () => {
     const newItem = {

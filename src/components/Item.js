@@ -1,9 +1,13 @@
+// React
+import { useCounter } from '../hooks/useCounter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faChevronLeft, faCircle, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 // Styles
 import '../stylesheets/Item.scss';
 
 function Item({ item }) {
+    const { counter, increase, decrement, reset } = useCounter(1);
+
     return (
         <div className="containerItem">
 
@@ -21,12 +25,15 @@ function Item({ item }) {
                 )}
             </div>
             <div >
-                <button>
-                    <FontAwesomeIcon icon={faChevronLeft} />
+                <button onClick={decrement}>
+                    -
+                    {/* <FontAwesomeIcon icon={faChevronLeft} /> */}
                 </button>
-                <span> {item.quantity} </span>
-                <button>
-                    <FontAwesomeIcon icon={faChevronRight} />
+                <span> {counter} </span>
+                {/* <span> {item.quantity} </span> */}
+                <button onClick={increase}>
+                    +
+                    {/* <FontAwesomeIcon icon={faChevronRight} /> */}
                 </button>
             </div>
 
