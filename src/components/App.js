@@ -8,7 +8,6 @@ import Footer from './Footer';
 // Styles
 import '../stylesheets/App.scss';
 import '../stylesheets/Reset.scss';
-import { logDOM } from '@testing-library/react';
 
 
 function App() {
@@ -23,7 +22,7 @@ function App() {
 
   console.log(items);
 
-
+// ESTUDIAR CÓMO HACER QUE EN QUANTITY SE REFLEJE EL VALOR DEL COUNTER
   const handleAddItem = () => {
     const newItem = {
       itemName: inputValue,

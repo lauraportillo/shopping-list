@@ -15,9 +15,7 @@ function ListItem({ items, toggleComplete }) {
         });
     }
     return (
-        <div >
-            <ul className="pokeList">{renderItem()}</ul>
-        </div>
+        <ul className="containerListItem">{renderItem()}</ul>
     );
 };
 

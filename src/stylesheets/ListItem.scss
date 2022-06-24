@@ -2,6 +2,9 @@
 @import 'Mixins';
 
 .containerListItem{
+    // @include flexColumnStart();
+    // width: 320px;
+
     @include flexColumn();
   
 }

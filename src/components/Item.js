@@ -6,9 +6,7 @@ import { faCircle, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import '../stylesheets/Item.scss';
 
 function Item({ item, index, toggleComplete }) {
-    const { counter, increase, decrement, reset } = useCounter(0);
-
-
+    const { counter, increase, decrement, reset } = useCounter(1);
 
 
     return (
