@@ -1,17 +1,20 @@
 // React
 import { useCounter } from '../hooks/useCounter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight, faChevronLeft, faCircle, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import { faCircle, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 // Styles
 import '../stylesheets/Item.scss';
 
-function Item({ item }) {
-    const { counter, increase, decrement, reset } = useCounter(1);
+function Item({ item, index, toggleComplete }) {
+    const { counter, increase, decrement, reset } = useCounter(0);
+
+
+
 
     return (
         <div className="containerItem">
 
-            <div  >
+            <div onClick={() => toggleComplete(index)} >
                 {item.isSelected ? (
                     <>
                         <FontAwesomeIcon icon={faCheckCircle} />
@@ -27,13 +30,11 @@ function Item({ item }) {
             <div >
                 <button onClick={decrement}>
                     -
-                    {/* <FontAwesomeIcon icon={faChevronLeft} /> */}
                 </button>
                 <span> {counter} </span>
-                {/* <span> {item.quantity} </span> */}
+
                 <button onClick={increase}>
                     +
-                    {/* <FontAwesomeIcon icon={faChevronRight} /> */}
                 </button>
             </div>
 
