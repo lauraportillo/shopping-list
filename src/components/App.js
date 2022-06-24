@@ -20,7 +20,7 @@ function App() {
     { itemName: 'item 3', quantity: 2, isSelected: false },
   ]);
   const [inputValue, setInputValue] = useState('');
-  const [totalItemCount, setTotalItemCount] = useState(6);
+
 
   const handleAddItem = () => {
     const newItem = {
@@ -33,8 +33,9 @@ function App() {
 
     setItems(newItems);
     setInputValue('');
-    // calculateTotal();
   };
+
+
 
   return <div className="container">
     <Header />
@@ -42,8 +43,7 @@ function App() {
     <main className="containerMain">
       <InputItem handleAddItem={handleAddItem} inputValue={inputValue} setInputValue={setInputValue} />
       <ListItem items={items} />
-      <div className="containerMain__total" >Total: 00</div>
-      {/* <div className='total'>Total: {totalItemCount}</div> */}
+      <div className="containerMain__total">Total different items: {items.length}</div>
     </main>
 
     <Footer />

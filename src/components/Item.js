@@ -11,7 +11,7 @@ function Item({ item }) {
     return (
         <div className="containerItem">
 
-            <div >
+            <div  >
                 {item.isSelected ? (
                     <>
                         <FontAwesomeIcon icon={faCheckCircle} />
