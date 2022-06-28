@@ -50,7 +50,7 @@ function App() {
     <main className="containerMain">
       <InputItem handleAddItem={handleAddItem} inputValue={inputValue} setInputValue={setInputValue} />
       <ListItem items={items} toggleComplete={toggleComplete} />
-      <div className="containerMain__total">Total different items: {items.length}</div>
+      {/* <div className="containerMain__total">Total different items: {items.length}</div> */}
     </main>
 
     <Footer />

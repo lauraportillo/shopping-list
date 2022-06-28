@@ -15,7 +15,14 @@ function ListItem({ items, toggleComplete }) {
         });
     }
     return (
-        <ul className="containerListItem">{renderItem()}</ul>
+
+        <div className="containerListItem">
+            <ul >{renderItem()}</ul>
+            <div className="containerListItem__total">Total different items: {items.length}</div>
+
+        </div>
+
+
     );
 };
 
