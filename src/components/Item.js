@@ -12,20 +12,20 @@ function Item({ item, index, toggleComplete }) {
     return (
         <div className="containerItem">
 
-            <div onClick={() => toggleComplete(index)} >
+            <div onClick={() => toggleComplete(index)} className="containerItem__item">
                 {item.isSelected ? (
                     <>
                         <FontAwesomeIcon icon={faCheckCircle} />
-                        <span >{item.itemName}</span>
+                        <span className="containerItem__item--name" >{item.itemName}</span>
                     </>
                 ) : (
                     <>
                         <FontAwesomeIcon icon={faCircle} />
-                        <span>{item.itemName}</span>
+                            <span className="containerItem__item--name">{item.itemName}</span>
                     </>
                 )}
             </div>
-            <div >
+            <div className="containerItem__counter" >
                 <button onClick={decrement}>
                     -
                 </button>
