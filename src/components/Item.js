@@ -3,9 +3,10 @@ import { useCounter } from '../hooks/useCounter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 // Components
-import ResetButton from './ResetButton';
+// import ResetButton from './ResetButton';
 // Styles
 import '../stylesheets/Item.scss';
+import '../stylesheets/ResetButton.scss';
 
 function Item({ item, index, toggleComplete }) {
     const { counter, increase, decrement, reset } = useCounter(1);
@@ -38,7 +39,10 @@ function Item({ item, index, toggleComplete }) {
                 </button>
             </div>
 
-            <ResetButton />
+            {/* <ResetButton reset={reset} /> ESTO SOLO SIRVE PARA RESETEAR EL COUNTER Y LO QUE YO QUIERO ES BORRAR EL ELEMENTO */}
+            <button className="resetBtn" onClick={reset}>
+                <i className="far fa-trash-alt resetBtn__icon"></i>
+            </button>
 
         </div>
     )
