@@ -12,12 +12,20 @@
 
 .containerItem__item--name{
     margin-left: 5px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .containerItem__counter{
     background-color: $color5;
-    padding:  5px 15px 5px 15px;
     border-radius: 20px;
+    padding:  5px 15px 5px 15px;
+}
 
+.containerItem__counter--btnL{
+    @include btn();
+    margin-right: 5px;   
+}
+.containerItem__counter--btnR{
+    @include btn();
+    margin-left: 5px;
 }

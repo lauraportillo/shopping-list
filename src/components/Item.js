@@ -26,12 +26,12 @@ function Item({ item, index, toggleComplete }) {
                 )}
             </div>
             <div className="containerItem__counter" >
-                <button onClick={decrement}>
+                <button onClick={decrement} className="containerItem__counter--btnL">
                     -
                 </button>
                 <span> {counter} </span>
 
-                <button onClick={increase}>
+                <button onClick={increase} className="containerItem__counter--btnR">
                     +
                 </button>
             </div>

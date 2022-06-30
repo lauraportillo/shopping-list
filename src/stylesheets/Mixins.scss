@@ -1,5 +1,14 @@
 @import 'Variables';
 
+@mixin btn() {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  outline: inherit;
+  padding: 0;
+}
+
 @mixin flex() {
   display: flex;
   justify-content: center;
@@ -32,3 +41,5 @@
   justify-content: center;
   align-items: flex-start;
 }
+
+
