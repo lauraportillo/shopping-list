@@ -2,6 +2,8 @@
 import { useCounter } from '../hooks/useCounter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+// Components
+import ResetButton from './ResetButton';
 // Styles
 import '../stylesheets/Item.scss';
 
@@ -35,6 +37,8 @@ function Item({ item, index, toggleComplete }) {
                     +
                 </button>
             </div>
+
+            <ResetButton />
 
         </div>
     )

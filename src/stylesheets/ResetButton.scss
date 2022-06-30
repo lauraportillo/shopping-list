@@ -1,0 +1,10 @@
+@import 'Variables';
+@import 'Mixins';
+
+.resetBtn{
+    @include btn();
+    margin-left: 10px;
+}
+.resetBtn__icon{
+    color: $color9;
+}
