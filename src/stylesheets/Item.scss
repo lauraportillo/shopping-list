@@ -29,3 +29,11 @@
     @include btn();
     margin-left: 5px;
 }
+
+.containerItem__deleteBtn{
+    @include btn();
+    margin-left: 10px;
+}
+.containerItem__deleteBtn--icon{
+    color: $color9;
+}

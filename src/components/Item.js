@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 // Styles
 import '../stylesheets/Item.scss';
-import '../stylesheets/ResetButton.scss';
 
 function Item({ item, index, toggleComplete }) {
     const { counter, increase, decrement, reset } = useCounter(1);
@@ -37,8 +36,8 @@ function Item({ item, index, toggleComplete }) {
                 </button>
             </div>
 
-            <button className="resetBtn">
-                <i className="far fa-trash-alt resetBtn__icon"></i>
+            <button className="containerItem__deleteBtn">
+                <i className="far fa-trash-alt containerItem__deleteBtn--icon"></i>
             </button>
 
         </div>

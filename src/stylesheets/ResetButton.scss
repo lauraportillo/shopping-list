@@ -3,8 +3,12 @@
 
 .resetBtn{
     @include btn();
-    margin-left: 10px;
+    background-color: $color7;
+    border-radius: 20px;
+    margin-top: 5px;
+    padding: 15px;
+    width: 280px;
 }
 .resetBtn__icon{
-    color: $color9;
+    color: $color4;
 }
