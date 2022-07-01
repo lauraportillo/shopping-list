@@ -39,7 +39,11 @@ function App() {
     setInputValue('');
   };
 
-  // aqui hacer un handle DELETE ITEM
+  // // aqui hacer un handle DELETE ITEM: creo que puede ser con splice, VER
+
+  // const handleDeleteItem = () => {
+
+  // };
 
   const toggleComplete = (index) => {
     const newItems = [...items];
