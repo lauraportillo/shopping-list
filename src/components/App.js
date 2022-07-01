@@ -39,6 +39,8 @@ function App() {
     setInputValue('');
   };
 
+  // aqui hacer un handle DELETE ITEM
+
   const toggleComplete = (index) => {
     const newItems = [...items];
 
