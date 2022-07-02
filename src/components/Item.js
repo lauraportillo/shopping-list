@@ -5,9 +5,8 @@ import { faCircle, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 // Styles
 import '../stylesheets/Item.scss';
 
-function Item({ item, index, toggleComplete }) {
+function Item({ item, index, toggleComplete, handleDeleteItem }) {
     const { counter, increase, decrement, reset } = useCounter(1);
-
 
     return (
         <div className="containerItem">
@@ -36,7 +35,7 @@ function Item({ item, index, toggleComplete }) {
                 </button>
             </div>
 
-            <button className="containerItem__deleteBtn">
+            <button className="containerItem__deleteBtn" onClick={handleDeleteItem}>
                 <i className="far fa-trash-alt containerItem__deleteBtn--icon"></i>
             </button>
 
