@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 // Components
 import Header from './Header';
+import Message from './Message';
 import InputItem from './InputItem';
 import ListItem from './ListItem';
 import Footer from './Footer';
@@ -9,6 +10,7 @@ import ResetButton from './ResetButton';
 // Styles
 import '../stylesheets/App.scss';
 import '../stylesheets/Reset.scss';
+
 
 
 function App() {
@@ -48,7 +50,7 @@ function App() {
 
   const renderMain = () => {
     if (items.length === 0) {
-      return 'write down your shopping list'
+      return <Message />
     } else {
       return (
         <>
