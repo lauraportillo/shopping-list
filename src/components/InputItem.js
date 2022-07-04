@@ -16,7 +16,9 @@ function InputItem({ handleAddItem, inputValue, setInputValue }) {
                 value={inputValue}
                 onChange={(ev) => setInputValue(ev.target.value)} />
 
-            <FontAwesomeIcon icon={faPlus} onClick={handleAddItem} />
+            <div className='containerInputItem__icon'>
+                <FontAwesomeIcon icon={faPlus} onClick={handleAddItem} className='containerInputItem__icon--add' />
+            </div>
         </div>
     )
 }

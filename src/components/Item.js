@@ -1,7 +1,5 @@
 // React
 import { useCounter } from '../hooks/useCounter';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 // Styles
 import '../stylesheets/Item.scss';
 
@@ -14,12 +12,12 @@ function Item({ item, index, toggleComplete, handleDeleteItem }) {
             <div onClick={() => toggleComplete(index)} className="containerItem__item">
                 {item.isSelected ? (
                     <>
-                        <FontAwesomeIcon icon={faCheckCircle} />
+                        <i className="fa fa-check-circle containerItem__item--icon" aria-hidden="true"></i>
                         <span className="containerItem__item--name" >{item.itemName}</span>
                     </>
                 ) : (
                     <>
-                        <FontAwesomeIcon icon={faCircle} />
+                            <i className="fa fa-circle containerItem__item--icon" aria-hidden="true"></i>
                             <span className="containerItem__item--name">{item.itemName}</span>
                     </>
                 )}
