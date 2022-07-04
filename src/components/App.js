@@ -14,10 +14,8 @@ import '../stylesheets/Reset.scss';
 function App() {
 
   // STATE
-
   const [items, setItems] = useState([]);
   const [inputValue, setInputValue] = useState('');
-  console.log(items);
 
   const handleAddItem = () => {
     const newItem = {
@@ -25,9 +23,7 @@ function App() {
       quantity: 1,
       isSelected: false,
     };
-
     const newItems = [...items, newItem];
-
     setItems(newItems);
     setInputValue('');
   };
