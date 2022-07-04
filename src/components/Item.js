@@ -6,7 +6,7 @@ import { faCircle, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import '../stylesheets/Item.scss';
 
 function Item({ item, index, toggleComplete, handleDeleteItem }) {
-    const { counter, increase, decrement, reset } = useCounter(1);
+    const { counter, increase, decrement } = useCounter(1);
 
     return (
         <div className="containerItem">
