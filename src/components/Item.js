@@ -35,7 +35,7 @@ function Item({ item, index, toggleComplete, handleDeleteItem }) {
                 </button>
             </div>
 
-            <button className="containerItem__deleteBtn" onClick={handleDeleteItem}>
+            <button className="containerItem__deleteBtn" onClick={() => handleDeleteItem(index)}>
                 <i className="far fa-trash-alt containerItem__deleteBtn--icon"></i>
             </button>
 

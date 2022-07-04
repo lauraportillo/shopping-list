@@ -42,9 +42,10 @@ function App() {
   // // aqui hacer un handle DELETE ITEM: creo que puede ser con splice, VER
 
   const handleDeleteItem = (index) => {
-    const deleteItem = items;
+    const deleteItem = [...items];
+
     deleteItem.splice(index, 1);
-    setItems([...deleteItem]);
+    setItems(deleteItem);
   };
 
 
