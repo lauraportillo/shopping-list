@@ -1,0 +1,12 @@
+@import 'Variables';
+@import 'Mixins';
+
+.containerMessage{
+    @include flexColumn();
+    margin-top: 20px;
+    width: 280px;
+}
+
+.containerMessage__img{
+    width: 180px;
+}
