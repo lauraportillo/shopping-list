@@ -6,7 +6,20 @@
     margin-top: 20px;
     width: 280px;
 }
+.containerMessage__title{
+    
+}
+.containerMessage__subtitle{
+    margin-top: 10px;
+}
+
+.containerMessage__bold{
+    color: $color6;
+    font-weight: bold;
+    font-size: 18px;
+}
 
 .containerMessage__img{
-    width: 180px;
+    margin-top: 20px;
+    width: 150px;
 }
