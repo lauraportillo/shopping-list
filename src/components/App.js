@@ -45,13 +45,26 @@ function App() {
   const handleReset = () => {
     setItems([]);
   };
+
+  const renderMain = () => {
+    if (items.length === 0) {
+      return 'write down your shopping list'
+    } else {
+      return (
+        <>
+          <ListItem items={items} toggleComplete={toggleComplete} handleDeleteItem={handleDeleteItem} />
+          <ResetButton handleReset={handleReset} />
+        </>
+      );
+    }
+  }
+
   return <div className="container">
     <Header />
 
     <main className="containerMain">
       <InputItem handleAddItem={handleAddItem} inputValue={inputValue} setInputValue={setInputValue} />
-      <ListItem items={items} toggleComplete={toggleComplete} handleDeleteItem={handleDeleteItem} />
-      <ResetButton handleReset={handleReset} />
+      {renderMain()}
     </main>
 
     <Footer />
