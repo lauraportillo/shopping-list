@@ -1,5 +1,7 @@
 // React
 import { useCounter } from '../hooks/useCounter';
+// import { IconPrinter } from '@tabler/icons';
+
 // Styles
 import '../stylesheets/Item.scss';
 
