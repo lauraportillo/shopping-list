@@ -2,8 +2,6 @@
 @import 'Mixins';
 
 .containerListItem{
-    // @include flexColumnStart();
-    // width: 320px;
     @include flexColumn();
     margin-top: 15px;
 }
@@ -13,6 +11,6 @@
     background-color: $color4;
     border-radius: 20px;
     margin-top: 5px;
-    padding: 15px;
+    padding: 12px;
     width: 280px;
   }
