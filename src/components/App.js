@@ -8,6 +8,7 @@ import ListItem from './ListItem';
 import Footer from './Footer';
 import ResetButton from './ResetButton';
 import PrintButton from './PrintButton';
+import SortButton from './SortButton';
 // Styles
 import '../stylesheets/App.scss';
 import '../stylesheets/Reset.scss';
@@ -63,6 +64,7 @@ function App() {
           <ListItem items={items} toggleComplete={toggleComplete} handleDeleteItem={handleDeleteItem} />
           <ResetButton handleReset={handleReset} />
           <PrintButton />
+          <SortButton />
         </>
       );
     }
