@@ -1,7 +1,7 @@
 // React
 import { useCounter } from '../hooks/useCounter';
-// import { IconPrinter } from '@tabler/icons';
-
+import { IconSquare } from '@tabler/icons';
+import { IconSquareCheck } from '@tabler/icons';
 // Styles
 import '../stylesheets/Item.scss';
 
@@ -14,13 +14,14 @@ function Item({ item, index, toggleComplete, handleDeleteItem }) {
             <div onClick={() => toggleComplete(index)} className="containerItem__item">
                 {item.isSelected ? (
                     <>
-                        <i className="fa fa-check-circle containerItem__item--icon" aria-hidden="true"></i>
-                        <span className="containerItem__item--name" >{item.itemName}</span>
+                        <IconSquareCheck color="#54585a" />
+                        <p className="containerItem__item--name" >{item.itemName}</p>
+
                     </>
                 ) : (
                     <>
-                            <i className="fa fa-circle containerItem__item--icon" aria-hidden="true"></i>
-                            <span className="containerItem__item--name">{item.itemName}</span>
+                            <IconSquare color="#54585a" />
+                            <p className="containerItem__item--name">{item.itemName}</p>
                     </>
                 )}
             </div>
