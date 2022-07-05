@@ -2,45 +2,48 @@
 @import 'Mixins';
 
 .containerItem{
-    @include flex();
+    @include flexBetween();
     background-color: $color3;
     border-radius: 20px;
     margin-top: 5px;
-    padding: 10px;
+    padding:  10px 0px 10px 0px;
     width: 280px;
     text-transform: capitalize;
 }
 
-.containerItem__item--name{
+
+
+.containerItemLeft{
+    @include flexStart();
+    margin-left: 20px;
+}
+.containerItemLeft__name{
     margin-left: 5px;
-    margin-right: 10px;
 }
 
-.containerItem__item--icon{
-    color:$color9;
-    font-size: 16px;
-    cursor: pointer;
-}
 
-.containerItem__counter{
+
+.containerItemRight{
+    @include flex();
+    margin-right: 20px;
+}
+.containerItemRight__counter{
     background-color: $color5;
     border-radius: 20px;
-    padding:  5px 15px 5px 15px;
+    padding:  3px 10px 3px 10px;
 }
-
-.containerItem__counter--btnL{
+.containerItemRight__counter--btnL{
     @include btn();
     margin-right: 5px;   
 }
-.containerItem__counter--btnR{
+.containerItemRight__counter--btnR{
     @include btn();
     margin-left: 5px;
 }
-
-.containerItem__deleteBtn{
+.containerItemRight__deleteBtn{
     @include btn();
     margin-left: 10px;
 }
-.containerItem__deleteBtn--icon{
+.containerItemRight__deleteBtn--icon{
     color: $color9;
 }

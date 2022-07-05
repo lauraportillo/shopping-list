@@ -14,6 +14,7 @@ function InputItem({ handleAddItem, inputValue, setInputValue }) {
                 type="text"
                 placeholder='Add an item...'
                 value={inputValue}
+                maxLength="15"
                 onChange={(ev) => setInputValue(ev.target.value)} />
 
             <div className='containerInputItem__icon'>

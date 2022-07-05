@@ -11,34 +11,40 @@ function Item({ item, index, toggleComplete, handleDeleteItem }) {
     return (
         <div className="containerItem">
 
-            <div onClick={() => toggleComplete(index)} className="containerItem__item">
+            <div onClick={() => toggleComplete(index)} className="containerItemLeft">
                 {item.isSelected ? (
                     <>
-                        <IconSquareCheck color="#54585a" />
-                        <p className="containerItem__item--name" >{item.itemName}</p>
+                        <IconSquareCheck color="#54585a" size={20} />
+                        <p className="containerItemLeft__name" >{item.itemName}</p>
 
                     </>
                 ) : (
-                    <>
-                            <IconSquare color="#54585a" />
-                            <p className="containerItem__item--name">{item.itemName}</p>
-                    </>
+                        <>
+                            <IconSquare color="#54585a" size={20} />
+                            <p className="containerItemLeft__name">{item.itemName}</p>
+                        </>
                 )}
             </div>
-            <div className="containerItem__counter" >
-                <button onClick={decrement} className="containerItem__counter--btnL">
+
+            <div className="containerItemRight">
+                <div className="containerItemRight__counter" >
+                    <button onClick={decrement} className="containerItemRight__counter--btnL">
                     -
                 </button>
                 <span> {counter} </span>
 
-                <button onClick={increase} className="containerItem__counter--btnR">
+                    <button onClick={increase} className="containerItemRight__counter--btnR">
                     +
                 </button>
             </div>
 
-            <button className="containerItem__deleteBtn" onClick={() => handleDeleteItem(index)}>
-                <i className="far fa-trash-alt containerItem__deleteBtn--icon"></i>
+                <button className="containerItemRight__deleteBtn" onClick={() => handleDeleteItem(index)}>
+                    <i className="far fa-trash-alt containerItemRight__deleteBtn--icon"></i>
             </button>
+
+            </div>
+
+
 
         </div>
     )
