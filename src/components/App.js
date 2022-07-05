@@ -20,14 +20,21 @@ function App() {
   const [inputValue, setInputValue] = useState('');
 
   const handleAddItem = () => {
+
     const newItem = {
       itemName: inputValue,
       quantity: 1,
       isSelected: false,
     };
-    const newItems = [...items, newItem];
-    setItems(newItems);
-    setInputValue('');
+
+    if (newItem.itemName === '') {
+
+    } else {
+      const newItems = [...items, newItem];
+      setItems(newItems);
+      setInputValue('');
+
+    }
   };
 
 
