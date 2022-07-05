@@ -1,3 +1,5 @@
+// React
+import { IconTrash } from '@tabler/icons';
 // Styles
 import '../stylesheets/ResetButton.scss';
 
@@ -9,7 +11,7 @@ const ResetButton = (props) => {
   return (
     <>
       <button className="resetBtn" onClick={handleReset}>
-        <i className="far fa-trash-alt resetBtn__icon"></i>
+        <IconTrash color="#df4a64" size={20} stroke={1.5} />
       </button>
     </>
   );

@@ -12,9 +12,6 @@ import PrintButton from './PrintButton';
 import '../stylesheets/App.scss';
 import '../stylesheets/Reset.scss';
 
-
-
-
 function App() {
 
   // STATE

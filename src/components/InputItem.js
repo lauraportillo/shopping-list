@@ -1,6 +1,5 @@
 // React
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { IconPlus } from '@tabler/icons';
 // Styles
 import '../stylesheets/InputItem.scss';
 
@@ -18,7 +17,7 @@ function InputItem({ handleAddItem, inputValue, setInputValue }) {
                 onChange={(ev) => setInputValue(ev.target.value)} />
 
             <div className='containerInputItem__icon'>
-                <FontAwesomeIcon icon={faPlus} onClick={handleAddItem} className='containerInputItem__icon--add' />
+                <IconPlus size={20} onClick={handleAddItem} />
             </div>
         </div>
     )

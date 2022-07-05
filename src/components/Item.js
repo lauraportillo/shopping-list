@@ -1,7 +1,6 @@
 // React
 import { useCounter } from '../hooks/useCounter';
-import { IconSquare } from '@tabler/icons';
-import { IconSquareCheck } from '@tabler/icons';
+import { IconSquareCheck, IconSquare, IconTrash } from '@tabler/icons';
 // Styles
 import '../stylesheets/Item.scss';
 
@@ -39,7 +38,7 @@ function Item({ item, index, toggleComplete, handleDeleteItem }) {
             </div>
 
                 <button className="containerItemRight__deleteBtn" onClick={() => handleDeleteItem(index)}>
-                    <i className="far fa-trash-alt containerItemRight__deleteBtn--icon"></i>
+                    <IconTrash color="#54585a" size={20} stroke={1.5} />
             </button>
 
             </div>
