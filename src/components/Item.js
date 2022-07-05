@@ -13,13 +13,13 @@ function Item({ item, index, toggleComplete, handleDeleteItem }) {
             <div onClick={() => toggleComplete(index)} className="containerItemLeft">
                 {item.isSelected ? (
                     <>
-                        <IconSquareCheck color="#54585a" size={20} />
+                        <span className="containerItemLeft__icon"><IconSquareCheck color="#54585a" size={20} /></span>
                         <p className="containerItemLeft__name" >{item.itemName}</p>
 
                     </>
                 ) : (
                         <>
-                            <IconSquare color="#54585a" size={20} />
+                            <span className="containerItemLeft__icon"><IconSquare color="#54585a" size={20} /></span>
                             <p className="containerItemLeft__name">{item.itemName}</p>
                         </>
                 )}
