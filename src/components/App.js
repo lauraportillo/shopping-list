@@ -1,5 +1,5 @@
 // React
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 // Components
 import Header from './Header';
 import Message from './Message';
@@ -13,14 +13,29 @@ import SortButton from './SortButton';
 import '../stylesheets/App.scss';
 import '../stylesheets/Reset.scss';
 
-function App() {
-
-  // STATE
+const App = () => {
+  // State
   const [items, setItems] = useState([]);
   const [inputValue, setInputValue] = useState('');
 
-  const handleAddItem = () => {
+  console.log(items);
 
+  useEffect(() => {
+    const data = localStorage.getItem('my-shopping-list');
+    if (data) {
+      setItems(JSON.parse(data));
+    }
+  }, [])
+
+
+  useEffect(() => {
+    localStorage.setItem('my-shopping-list', JSON.stringify(items));
+  });
+
+
+
+
+  const handleAddItem = () => {
     const newItem = {
       itemName: inputValue,
       quantity: 1,
