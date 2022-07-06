@@ -33,8 +33,6 @@ const App = () => {
   });
 
 
-
-
   const handleAddItem = () => {
     const newItem = {
       itemName: inputValue,
@@ -70,6 +68,14 @@ const App = () => {
     setItems([]);
   };
 
+  // si me los ordena pero no me los pinta
+  const handleSort = () => {
+    const sortedItems = items
+      .sort((a, b) => a.itemName.localeCompare(b.itemName));
+    console.log(sortedItems);
+    setItems(sortedItems);
+  }
+
   const renderMain = () => {
     if (items.length === 0) {
       return <Message />
@@ -80,7 +86,7 @@ const App = () => {
           <section className="containerMain__btns">
             <ResetButton handleReset={handleReset} />
             <PrintButton />
-            <SortButton />
+            <SortButton handleSort={handleSort} />
           </section>
         </>
       );
