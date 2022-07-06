@@ -18,6 +18,7 @@ function ListItem({ items, toggleComplete, handleDeleteItem }) {
 
         <div className="containerListItem">
             <ul >{renderItem()}</ul>
+            <div className="containerListItem__total">Total different items: {items.length}</div>
         </div>
 
 

@@ -6,3 +6,11 @@
     margin-top: 15px;
 }
 
+.containerListItem__total{
+    @include flex();
+    background-color: $color4;
+    border-radius: 20px;
+    margin-top: 5px;
+    padding: 12px;
+    width: 280px;
+  } 

@@ -78,10 +78,9 @@ const App = () => {
         <>
           <ListItem items={items} toggleComplete={toggleComplete} handleDeleteItem={handleDeleteItem} />
           <section className="containerMain__btns">
-            <button className="containerMain__btns--total">{items.length}</button>
-          <ResetButton handleReset={handleReset} />
-          <PrintButton />
-          <SortButton />
+            <ResetButton handleReset={handleReset} />
+            <PrintButton />
+            <SortButton />
           </section>
         </>
       );
