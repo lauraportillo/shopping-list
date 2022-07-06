@@ -68,13 +68,14 @@ const App = () => {
     setItems([]);
   };
 
-  // si me los ordena pero no me los pinta
+  // PENSAR CÓMO HACER UN TOGGLE PARA QUE ORDENE DE A a B Y DE B a A o desordenado
   const handleSort = () => {
-    const sortedItems = items
+    const sortedItems = [...items]
       .sort((a, b) => a.itemName.localeCompare(b.itemName));
     console.log(sortedItems);
     setItems(sortedItems);
   }
+
 
   const renderMain = () => {
     if (items.length === 0) {
