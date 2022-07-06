@@ -4,8 +4,7 @@
 .resetBtn{
     @include btn();
     background-color: $color7;
-    border-radius: 20px;
-    margin-top: 5px;
-    padding: 15px;
-    width: 280px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }

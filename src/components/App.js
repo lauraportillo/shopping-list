@@ -77,9 +77,11 @@ const App = () => {
       return (
         <>
           <ListItem items={items} toggleComplete={toggleComplete} handleDeleteItem={handleDeleteItem} />
+          <section className="containerMain__btns">
           <ResetButton handleReset={handleReset} />
           <PrintButton />
           <SortButton />
+          </section>
         </>
       );
     }

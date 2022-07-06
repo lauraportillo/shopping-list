@@ -5,7 +5,9 @@ import '../stylesheets/PrintButton.scss';
 
 function PrintButton() {
     return (
-        <IconPrinter />
+        <button className="resetBtn">
+            <IconPrinter color="#df4a64" size={20} stroke={1.5} />
+        </button>  
     )
 }
 
