@@ -1,10 +1,27 @@
+// Components
+import Item from './Item';
 // Styles
 import '../stylesheets/ListPrinted.scss';
 
 function ListPrinted({ referent, items }) {
+
+    const renderItem = () => {
+        return items.map((item, index) => {
+            return (
+                <li key={index}>
+                    {/* <p>{item.itemName}</p> */}
+                    <Item item={item} index={index} />
+                </li>
+            );
+        });
+    }
     return (
-        <div ref={referent}>All List Printed</div>
-    )
+
+        <div ref={referent}>
+            <ul >{renderItem()}</ul>
+        </div>
+
+    );
 }
 
 export default ListPrinted;

@@ -10,7 +10,7 @@ const ResetButton = (props) => {
 
   return (
     <>
-      <button className="resetBtn" onClick={handleReset}>
+      <button className="resetBtn" onClick={handleReset} title='delete list'>
         <IconTrash color="#df4a64" size={20} stroke={1.5} />
       </button>
     </>

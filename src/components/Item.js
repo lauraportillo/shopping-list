@@ -37,7 +37,7 @@ function Item({ item, index, toggleComplete, handleDeleteItem }) {
                 </button>
             </div>
 
-                <button className="containerItemRight__deleteBtn" onClick={() => handleDeleteItem(index)}>
+                <button className="containerItemRight__deleteBtn" onClick={() => handleDeleteItem(index)} title='delete item'>
                     <IconTrash color="#54585a" size={20} stroke={1.5} />
             </button>
 

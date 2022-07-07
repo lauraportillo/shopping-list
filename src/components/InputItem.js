@@ -16,7 +16,7 @@ function InputItem({ handleAddItem, inputValue, setInputValue }) {
                 maxLength="15"
                 onChange={(ev) => setInputValue(ev.target.value)} />
 
-            <div className='containerInputItem__icon'>
+            <div className='containerInputItem__icon' title='add item'>
                 <IconPlus size={20} onClick={handleAddItem} />
             </div>
         </div>

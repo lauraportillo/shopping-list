@@ -5,7 +5,7 @@ import '../stylesheets/SortButton.scss';
 
 function SortButtonDown({ handleSortDown }) {
     return (
-        <button className="sortBtn" onClick={() => handleSortDown()}>
+        <button className="sortBtn" onClick={() => handleSortDown()} title='sort list from Z'>
             <IconArrowsDown color="#df4a64" size={20} stroke={1.5} />
         </button>
     )
