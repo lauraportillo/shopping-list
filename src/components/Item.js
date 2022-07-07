@@ -1,11 +1,11 @@
 // React
-import { useCounter } from '../hooks/useCounter';
+// import { useCounter } from '../hooks/useCounter';
 import { IconSquareCheck, IconSquare, IconTrash } from '@tabler/icons';
 // Styles
 import '../stylesheets/Item.scss';
 
-function Item({ item, index, toggleComplete, handleDeleteItem }) {
-    const { counter, increase, decrement } = useCounter(1);
+function Item({ item, index, toggleComplete, handleDeleteItem, handleIncrease, handleDecrement }) {
+    // const { counter, increase, decrement } = useCounter(1);
 
     return (
         <div className="containerItem">
@@ -27,12 +27,12 @@ function Item({ item, index, toggleComplete, handleDeleteItem }) {
 
             <div className="containerItemRight">
                 <div className="containerItemRight__counter" >
-                    <button onClick={decrement} className="containerItemRight__counter--btnL">
+                    <button onClick={() => handleDecrement(index)} className="containerItemRight__counter--btnL">
                     -
                 </button>
-                <span> {counter} </span>
+                    <span> {item.quantity} </span>
 
-                    <button onClick={increase} className="containerItemRight__counter--btnR">
+                    <button onClick={() => handleIncrease(index)} className="containerItemRight__counter--btnR">
                     +
                 </button>
             </div>

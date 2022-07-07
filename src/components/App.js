@@ -27,6 +27,8 @@ const App = () => {
     content: () => componentRef.current,
   });
 
+  console.log(items);
+
   useEffect(() => {
     const data = localStorage.getItem('my-shopping-list');
     if (data) {
@@ -56,6 +58,18 @@ const App = () => {
 
     }
   };
+
+  const handleIncrease = (index) => {
+    const newItems = [...items];
+    newItems[index].quantity++;
+    setItems(newItems);
+
+  }
+  const handleDecrement = (index) => {
+    const newItems = [...items];
+    newItems[index].quantity--;
+    setItems(newItems);
+  } 
 
 
   const handleDeleteItem = (index) => {
@@ -93,7 +107,7 @@ const App = () => {
     } else {
       return (
         <>
-          <ListItem items={items} toggleComplete={toggleComplete} handleDeleteItem={handleDeleteItem} />
+          <ListItem items={items} toggleComplete={toggleComplete} handleDeleteItem={handleDeleteItem} handleIncrease={handleIncrease} handleDecrement={handleDecrement} />
           <section className="containerMain__btns">
             <ResetButton handleReset={handleReset} />
             <PrintButton handlePrint={handlePrint} />
