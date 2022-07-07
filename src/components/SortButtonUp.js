@@ -1,12 +1,12 @@
 // React
-import { IconArrowsDownUp } from '@tabler/icons';
+import { IconArrowsUp } from '@tabler/icons';
 // Styles
 import '../stylesheets/SortButton.scss';
 
-function SortButtonUp({ handleSort }) {
+function SortButtonUp({ handleSortUp }) {
     return (
-        <button className="sortBtn" onClick={() => handleSort()}>
-            <IconArrowsDownUp color="#df4a64" size={20} stroke={1.5} />
+        <button className="sortBtn" onClick={() => handleSortUp()}>
+            <IconArrowsUp color="#df4a64" size={20} stroke={1.5} />
         </button>
     )
 }
