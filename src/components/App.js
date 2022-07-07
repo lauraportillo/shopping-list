@@ -6,6 +6,7 @@ import Header from './Header';
 import Message from './Message';
 import InputItem from './InputItem';
 import ListItem from './ListItem';
+import ListPrinted from './ListPrinted';
 import Footer from './Footer';
 import ResetButton from './ResetButton';
 import PrintButton from './PrintButton';
@@ -14,6 +15,7 @@ import SortButtonDown from './SortButtonDown';
 // Styles
 import '../stylesheets/App.scss';
 import '../stylesheets/Reset.scss';
+
 
 
 const App = () => {
@@ -98,6 +100,7 @@ const App = () => {
             <SortButtonUp handleSortUp={handleSortUp} />
             <SortButtonDown handleSortDown={handleSortDown} />
           </section>
+          <ListPrinted items={items} />
         </>
       );
     }
