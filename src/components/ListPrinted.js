@@ -1,9 +1,9 @@
 // Styles
 import '../stylesheets/ListPrinted.scss';
 
-function ListPrinted({ items }) {
+function ListPrinted({ referent, items }) {
     return (
-        <div>All List Printed</div>
+        <div ref={referent}>All List Printed</div>
     )
 }
 

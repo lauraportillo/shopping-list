@@ -1,5 +1,5 @@
 // React
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useReactToPrint } from 'react-to-print';
 // Components
 import Header from './Header';
@@ -22,10 +22,10 @@ const App = () => {
   // State
   const [items, setItems] = useState([]);
   const [inputValue, setInputValue] = useState('');
-  // const componentRef = useRef();
-  // const handlePrint = useReactToPrint({
-  //   content: () => componentRef.current,
-  // });
+  const componentRef = useRef();
+  const handlePrint = useReactToPrint({
+    content: () => componentRef.current,
+  });
 
   useEffect(() => {
     const data = localStorage.getItem('my-shopping-list');
@@ -96,11 +96,10 @@ const App = () => {
           <ListItem items={items} toggleComplete={toggleComplete} handleDeleteItem={handleDeleteItem} />
           <section className="containerMain__btns">
             <ResetButton handleReset={handleReset} />
-            <PrintButton />
+            <PrintButton handlePrint={handlePrint} />
             <SortButtonUp handleSortUp={handleSortUp} />
             <SortButtonDown handleSortDown={handleSortDown} />
           </section>
-          <ListPrinted items={items} />
         </>
       );
     }
@@ -112,6 +111,9 @@ const App = () => {
     <main className="containerMain">
       <InputItem handleAddItem={handleAddItem} inputValue={inputValue} setInputValue={setInputValue} />
       {renderMain()}
+      <div style={{ display: 'none' }} >
+        <ListPrinted items={items} referent={componentRef} />
+      </div>
     </main>
 
     <Footer />
