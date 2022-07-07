@@ -20,8 +20,6 @@ const App = () => {
   const [items, setItems] = useState([]);
   const [inputValue, setInputValue] = useState('');
 
-  console.log(items);
-
   useEffect(() => {
     const data = localStorage.getItem('my-shopping-list');
     if (data) {
@@ -69,14 +67,12 @@ const App = () => {
   const handleSortUp = () => {
     const sortedItems = [...items]
       .sort((a, b) => a.itemName.localeCompare(b.itemName));
-    console.log(sortedItems);
     setItems(sortedItems);
   }
 
   const handleSortDown = () => {
     const sortedItems = [...items]
       .sort((a, b) => b.itemName.localeCompare(a.itemName));
-    console.log(sortedItems);
     setItems(sortedItems);
   }
 
