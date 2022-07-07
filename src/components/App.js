@@ -9,9 +9,11 @@ import Footer from './Footer';
 import ResetButton from './ResetButton';
 import PrintButton from './PrintButton';
 import SortButtonUp from './SortButtonUp';
+import SortButtonDown from './SortButtonDown';
 // Styles
 import '../stylesheets/App.scss';
 import '../stylesheets/Reset.scss';
+
 
 const App = () => {
   // State
@@ -93,6 +95,7 @@ const App = () => {
             <ResetButton handleReset={handleReset} />
             <PrintButton />
             <SortButtonUp handleSortUp={handleSortUp} />
+            <SortButtonDown handleSortDown={handleSortDown} />
           </section>
         </>
       );
