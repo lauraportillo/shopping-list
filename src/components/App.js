@@ -8,7 +8,7 @@ import ListItem from './ListItem';
 import Footer from './Footer';
 import ResetButton from './ResetButton';
 import PrintButton from './PrintButton';
-import SortButton from './SortButton';
+import SortButtonUp from './SortButtonUp';
 // Styles
 import '../stylesheets/App.scss';
 import '../stylesheets/Reset.scss';
@@ -64,18 +64,23 @@ const App = () => {
     setItems(newItems);
   };
 
-  const handleReset = () => {
-    setItems([]);
-  };
-
-  // PENSAR CÓMO HACER UN TOGGLE PARA QUE ORDENE DE A a B Y DE B a A o desordenado
-  const handleSort = () => {
+  const handleSortUp = () => {
     const sortedItems = [...items]
       .sort((a, b) => a.itemName.localeCompare(b.itemName));
     console.log(sortedItems);
     setItems(sortedItems);
   }
 
+  const handleSortDown = () => {
+    const sortedItems = [...items]
+      .sort((a, b) => b.itemName.localeCompare(a.itemName));
+    console.log(sortedItems);
+    setItems(sortedItems);
+  }
+
+  const handleReset = () => {
+    setItems([]);
+  };
 
   const renderMain = () => {
     if (items.length === 0) {
@@ -87,7 +92,7 @@ const App = () => {
           <section className="containerMain__btns">
             <ResetButton handleReset={handleReset} />
             <PrintButton />
-            <SortButton handleSort={handleSort} />
+            <SortButtonUp handleSortUp={handleSortUp} />
           </section>
         </>
       );

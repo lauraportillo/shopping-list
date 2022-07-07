@@ -3,7 +3,7 @@ import { IconArrowsDownUp } from '@tabler/icons';
 // Styles
 import '../stylesheets/SortButton.scss';
 
-function SortButton({ handleSort }) {
+function SortButtonUp({ handleSort }) {
     return (
         <button className="sortBtn" onClick={() => handleSort()}>
             <IconArrowsDownUp color="#df4a64" size={20} stroke={1.5} />
@@ -11,4 +11,4 @@ function SortButton({ handleSort }) {
     )
 }
 
-export default SortButton;
+export default SortButtonUp;
