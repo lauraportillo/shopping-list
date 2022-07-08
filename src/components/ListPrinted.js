@@ -9,7 +9,6 @@ function ListPrinted({ referent, items }) {
         return items.map((item, index) => {
             return (
                 <li key={index}>
-                    {/* <p>{item.itemName}</p> */}
                     <Item item={item} index={index} />
                 </li>
             );

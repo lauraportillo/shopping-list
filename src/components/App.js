@@ -27,8 +27,6 @@ const App = () => {
     content: () => componentRef.current,
   });
 
-  console.log(items);
-
   useEffect(() => {
     const data = localStorage.getItem('my-shopping-list');
     if (data) {
@@ -65,6 +63,7 @@ const App = () => {
     setItems(newItems);
 
   }
+
   const handleDecrement = (index) => {
     const newItems = [...items];
     if (newItems[index].quantity > 1) {
@@ -72,7 +71,6 @@ const App = () => {
     }
     setItems(newItems);
   } 
-
 
   const handleDeleteItem = (index) => {
     const deleteItem = [...items];
