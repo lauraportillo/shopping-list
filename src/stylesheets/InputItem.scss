@@ -8,8 +8,11 @@
 
 .containerInputItem__input{
     background-color: inherit;
+    // border-style: dotted;
+    border-style: solid;
     border-color: $color6;
     border-radius: 20px;
+    color: $color6;
     padding-left: 15px;
     width: 220px;
     height: 35px;
