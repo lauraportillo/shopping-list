@@ -1,3 +1,22 @@
 @import 'Variables';
 @import 'Mixins';
 
+.containerItemPrinted{
+    @include flexStart();
+    background-color: $color3;
+    border-radius: 20px;
+    margin-top: 5px;
+    padding:  5px 0px 5px 0px;
+    width: 280px;
+    text-transform: capitalize;
+
+}
+.containerItemPrinted__quantity{
+    margin-left: 20px;
+    background-color: $color5;
+    border-radius: 20px;
+    padding: 3px 20px 3px 20px;
+}
+.containerItemPrinted__name{
+    margin-left: 10px;
+}

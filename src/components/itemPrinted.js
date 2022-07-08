@@ -1,12 +1,12 @@
 // Styles
 import '../stylesheets/ItemPrinted.scss';
 
-function ItemPrinted({ item, index }) {
+function ItemPrinted({ item }) {
     return (
         <div className="containerItemPrinted">
 
-            <span> {item.quantity} </span>
-            <p  >{item.itemName}</p>
+            <p className="containerItemPrinted__quantity"> {item.quantity} </p>
+            <p className="containerItemPrinted__name"> {item.itemName} </p>
 
         </div>
     )

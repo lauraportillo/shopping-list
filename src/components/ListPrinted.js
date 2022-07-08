@@ -16,8 +16,8 @@ function ListPrinted({ referent, items }) {
     }
     return (
 
-        <div ref={referent}>
-            <ul >{renderItem()}</ul>
+        <div ref={referent} className="containerListItemPrinted">
+            <ul>{renderItem()}</ul>
         </div>
 
     );

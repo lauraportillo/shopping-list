@@ -1,2 +1,8 @@
 @import 'Variables';
 @import 'Mixins';
+
+.containerListItemPrinted{
+    @include flexColumn();
+    margin-top: 15px;
+}
+
