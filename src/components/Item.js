@@ -1,11 +1,8 @@
-// React
-// import { useCounter } from '../hooks/useCounter';
 import { IconSquareCheck, IconSquare, IconTrash } from '@tabler/icons';
 // Styles
 import '../stylesheets/Item.scss';
 
 function Item({ item, index, toggleComplete, handleDeleteItem, handleIncrease, handleDecrement }) {
-    // const { counter, increase, decrement } = useCounter(1);
 
     return (
         <div className="containerItem">
