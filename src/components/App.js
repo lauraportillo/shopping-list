@@ -67,7 +67,9 @@ const App = () => {
   }
   const handleDecrement = (index) => {
     const newItems = [...items];
-    newItems[index].quantity--;
+    if (newItems[index].quantity > 1) {
+      newItems[index].quantity--;
+    }
     setItems(newItems);
   } 
 
