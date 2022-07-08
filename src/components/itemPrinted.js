@@ -1,9 +1,15 @@
-import React from 'react'
+// Styles
+import '../stylesheets/ItemPrinted.scss';
 
-function itemPrinted() {
+function ItemPrinted({ item, index }) {
     return (
-        <div>itemPrinted</div>
+        <div className="containerItemPrinted">
+
+            <span> {item.quantity} </span>
+            <p  >{item.itemName}</p>
+
+        </div>
     )
 }
 
-export default itemPrinted;
+export default ItemPrinted;

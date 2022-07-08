@@ -40,8 +40,6 @@ function Item({ item, index, toggleComplete, handleDeleteItem, handleIncrease, h
 
             </div>
 
-
-
         </div>
     )
 }

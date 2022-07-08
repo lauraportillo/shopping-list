@@ -1,5 +1,5 @@
 // Components
-import Item from './Item';
+import ItemPrinted from './ItemPrinted';
 // Styles
 import '../stylesheets/ListPrinted.scss';
 
@@ -9,7 +9,7 @@ function ListPrinted({ referent, items }) {
         return items.map((item, index) => {
             return (
                 <li key={index}>
-                    <Item item={item} index={index} />
+                    <ItemPrinted item={item} index={index} />
                 </li>
             );
         });
