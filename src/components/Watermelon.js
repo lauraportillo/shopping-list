@@ -3,7 +3,8 @@ import '../stylesheets/Watermelon.scss';
 
 function Watermelon() {
     return (
-        <div className="watermelon">
+        <div className="containerWatermelon">
+            <div className="watermelon">
             <div className="dot"></div>
             <div className="dot"></div>
             <div className="dot"></div>
@@ -12,6 +13,8 @@ function Watermelon() {
             <div className="dot"></div>
             <div className="dot"></div>
             <div className="dot"></div>
+        </div>
+
         </div>
     )
 }

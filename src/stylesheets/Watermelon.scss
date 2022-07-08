@@ -1,11 +1,15 @@
 @import 'Variables';
 @import 'Mixins';
 
+// .containerWatermelon{
+//     transform: scale(20%);
+// }
+
 .watermelon {
     width: 500px;
     height: 250px;
-    // margin: auto;
-    // position: relative;
+    margin: auto;
+    position: relative;
     border-radius: 500px 500px 0 0;
     background-image: radial-gradient($color4 65%, #D0C29B 0, #D0C29B 68%, $color6 0);
     background-size: 500px 500px;
