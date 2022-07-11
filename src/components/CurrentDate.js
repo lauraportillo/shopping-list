@@ -4,7 +4,7 @@ const CurrentDate = () => {
   let displayTime = ('0' + showDate.getHours()).slice(-2) + ':' + ('0' + showDate.getMinutes()).slice(-2);
 
   return (
-      <div>
+    <div className="date">
         {displayTodayDate} {displayTime}h
       </div>
   );

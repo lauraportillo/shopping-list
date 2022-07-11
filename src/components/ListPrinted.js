@@ -1,8 +1,10 @@
 // Components
 import CurrentDate from './CurrentDate';
 import ItemPrinted from './ItemPrinted';
+import Header from './Header'
 // Styles
 import '../stylesheets/ListPrinted.scss';
+;
 
 function ListPrinted({ referent, items }) {
 
@@ -18,8 +20,9 @@ function ListPrinted({ referent, items }) {
     return (
 
         <div ref={referent} className="containerListItemPrinted">
+            <Header />
             <CurrentDate />
-            <ul>{renderItem()}</ul>
+            <ul className="containerListItemPrinted__list">{renderItem()}</ul>
         </div>
 
     );
