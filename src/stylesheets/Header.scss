@@ -10,8 +10,13 @@
     transform: scale(80%);
 }
 .containerHeader__title{
+    @include flexColumnStart();
+    margin-top: 20px;
+    
+}
+.containerHeader__title--title{
     font-size: 20px;
 }
-.containerHeader__subtitle{
-    margin-top: 10px; 
+.containerHeader__title--subtitle{
+    margin-top: 5px; 
 }

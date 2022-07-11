@@ -14,8 +14,12 @@ function Header() {
                 <Watermelon3 />
             </section>
 
-            <h1 className="containerHeader__title">shopping</h1>
-            <h2 className="containerHeader__subtitle">and eat healthy!</h2>
+            <section className="containerHeader__title">
+                <h1 className="containerHeader__title--title">shopping</h1>
+                <h2 className="containerHeader__title--subtitle">and eat healthy!</h2>
+            </section>
+
+
         </header>
     )
 }
