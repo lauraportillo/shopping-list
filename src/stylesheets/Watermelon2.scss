@@ -1,0 +1,66 @@
+@import 'Variables';
+@import 'Mixins';
+
+.containerWatermelon2{
+  margin-right: 2px;
+}
+.watermelon2 {
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    position: relative;
+    border-radius: 100px 100px 0 0;
+    background-image: radial-gradient($color4 65%, #D0C29B 0, #D0C29B 68%, $color6 0);
+    background-size: 100px 100px;
+    transform: rotate(150deg);
+    position: relative;
+  }
+
+ 
+  .dot2 {
+    width: 5px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #333;
+    position: absolute;
+  }
+  .dot2:nth-child(8n) {
+    left: 12px;
+    top: 40px;
+    transform: rotate(-45deg);
+  }
+  .dot2:nth-child(8n+1) {
+    left: 25px;
+    top: 30px;
+    transform: rotate(15deg);
+  }
+  .dot2:nth-child(8n+2) {
+    left: 40px;
+    top: 40px;
+    transform: rotate(35deg);
+  }
+  .dot2:nth-child(8n+3) {
+    left: 40px;
+    top: 20px;
+    transform: rotate(10deg);
+  }
+  .dot2:nth-child(8n+4) {
+    left: 55px;
+    top: 30px;
+    transform: rotate(120deg);
+  }
+  .dot2:nth-child(8n+5) {
+    left: 65px;
+    top: 42px;
+    transform: rotate(30deg);
+  }
+  .dot2:nth-child(8n+6) {
+    left: 70px;
+    top: 25px;
+    transform: rotate(190deg);
+  }
+  .dot2:nth-child(8n+7) {
+    left: 80px;
+    top: 37px;
+    transform: rotate(310deg);
+  }
