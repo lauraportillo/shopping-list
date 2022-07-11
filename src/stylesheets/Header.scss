@@ -11,12 +11,15 @@
 }
 .containerHeader__title{
     @include flexColumnStart();
-    margin-top: 20px;
+    margin-top: 10px;
     
 }
 .containerHeader__title--title{
-    font-size: 20px;
+    color: $color1;
+    font-family: $typo1;
+    font-size: 35px;
 }
 .containerHeader__title--subtitle{
-    margin-top: 5px; 
+    color: $color4;
+    font-family: $typo3;
 }
