@@ -8,7 +8,6 @@
 
 .containerInputItem__input{
     background-color: inherit;
-    // border-style: dotted;
     border-style: solid;
     border-color: $color6;
     border-radius: 20px;
@@ -29,3 +28,18 @@
     margin-left: 5px;
     cursor: pointer;
 }
+
+  // RESPONSIVE
+  @media all and (min-width: 768px) {
+    .containerInputItem__input{
+        font-size: 16px;
+        padding-left: 20px;
+        width: 400px;
+        height: 40px;
+    }
+    
+    .containerInputItem__icon{
+        width: 70px;
+        height: 40px;
+    }
+  }
