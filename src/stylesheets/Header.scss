@@ -10,7 +10,7 @@
     transform: scale(80%);
 }
 .containerHeader__title{
-    @include flexColumnStart();
+    @include flexColumn();
     margin-top: 10px;
     
 }
