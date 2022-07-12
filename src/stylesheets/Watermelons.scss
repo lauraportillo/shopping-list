@@ -43,8 +43,16 @@
     position: relative;
     margin-left: -3px;
   }
+  .watermelon4 {
+   display: none;
+  }
+  .watermelon5 {
+    display: none;
+  }
+  .watermelon6 {
+    display: none;
+  }
 
- 
   .dot {
     width: 5px;
     height: 3px;
@@ -92,3 +100,52 @@
     top: 37px;
     transform: rotate(310deg);
   }
+
+// RESPONSIVE
+  @media all and (min-width: 768px) {
+
+    .containerWatermelons{
+      margin-top: 30px;
+      transform: scale(110%);
+    }
+    .watermelon4 {
+      display: flex;
+      width: 100px;
+      height: 50px;
+      margin: auto;
+      position: relative;
+      border-radius: 100px 100px 0 0;
+      background-image: radial-gradient($color4 65%, #D0C29B 0, #D0C29B 68%, $color6 0);
+      background-size: 100px 100px;
+      transform: rotate(200deg);
+      position: relative;
+      margin-right: 10px;
+    }
+    .watermelon5 {
+      display: flex;
+      width: 100px;
+      height: 50px;
+      margin: auto;
+      position: relative;
+      border-radius: 100px 100px 0 0;
+      background-image: radial-gradient($color4 65%, #D0C29B 0, #D0C29B 68%, $color6 0);
+      background-size: 100px 100px;
+      transform: rotate(150deg);
+      position: relative;
+      margin-right: 2px;
+    }
+    .watermelon6 {
+      display: flex;
+      width: 100px;
+      height: 50px;
+      margin: auto;
+      position: relative;
+      border-radius: 100px 100px 0 0;
+      background-image: radial-gradient($color4 65%, #D0C29B 0, #D0C29B 68%, $color6 0);
+      background-size: 100px 100px;
+      transform: rotate(170deg);
+      position: relative;
+      margin-left: -3px;
+    }
+  }
+  

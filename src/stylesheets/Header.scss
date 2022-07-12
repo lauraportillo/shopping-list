@@ -20,3 +20,16 @@
     color: $color4;
     font-family: $typo3;
 }
+
+// RESPONSIVE
+@media all and (min-width: 768px) {
+    .containerHeader__title{
+        margin-top: 30px; 
+    }
+    .containerHeader__title--title{
+        font-size: 50px;
+    }
+    .containerHeader__title--subtitle{
+        font-size: 18px;
+    }
+}
