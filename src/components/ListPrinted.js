@@ -22,7 +22,12 @@ function ListPrinted({ referent, items }) {
         <div ref={referent} className="containerListItemPrinted">
             <Header />
             <ul className="containerListItemPrinted__list">{renderItem()}</ul>
-            <CurrentDate />
+            <footer className="containerListItemPrinted__footer">
+                <p className="containerListItemPrinted__footer--text">Printed on</p>
+                <CurrentDate /> 
+            </footer>
+
+
         </div>
 
     );

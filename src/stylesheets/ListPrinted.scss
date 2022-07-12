@@ -9,12 +9,17 @@
 .containerListItemPrinted__list{
     margin-top: 20px;
 }
+.containerListItemPrinted__footer{
+    @include flex();
+    margin-top: 20px;
+}
+.containerListItemPrinted__footer--text{
+    color: $color4;
+    font-family: $typo3;
+}
 
 .date{
-    margin-top: 20px;
-    background-color: $color6;
-    border-radius: 20px;
-    margin-top: 5px;
-    padding:  10px 0px 10px 0px;
-    width: 280px;
+    margin-left: 5px;
+    color: $color4;
+    font-family: $typo3;
 }
