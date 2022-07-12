@@ -5,10 +5,7 @@
     @include flexColumn();
     margin-top: 20px;
 }
-.containerHeader__watermelons{
-    @include flex();
-    transform: scale(80%);
-}
+
 .containerHeader__title{
     @include flexColumn();
     margin-top: 10px;
