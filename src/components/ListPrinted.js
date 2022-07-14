@@ -1,7 +1,7 @@
 // Components
 import CurrentDate from './CurrentDate';
 import ItemPrinted from './ItemPrinted';
-import Header from './Header'
+import HeaderPrinted from './HeaderPrinted'
 // Styles
 import '../stylesheets/ListPrinted.scss';
 ;
@@ -20,15 +20,15 @@ function ListPrinted({ referent, items }) {
     return (
 
         <div ref={referent} className="containerListItemPrinted">
-            <Header />
+            <HeaderPrinted />
+            <main>
             <ul className="containerListItemPrinted__list">{renderItem()}</ul>
             <div className="containerListItem__total">Total different items: {items.length}</div>
+            </main>
             <footer className="containerListItemPrinted__footer">
                 <p className="containerListItemPrinted__footer--text">Printed on</p>
                 <CurrentDate /> 
             </footer>
-
-
         </div>
 
     );

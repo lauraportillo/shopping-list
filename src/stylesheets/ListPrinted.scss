@@ -9,6 +9,14 @@
 .containerListItemPrinted__list{
     margin-top: 20px;
 }
+.containerListItemPrinted__total{
+    @include flex();
+    background-color: $color4;
+    border-radius: 20px;
+    margin-top: 5px;
+    padding: 12px;
+    width: 280px;
+}
 .containerListItemPrinted__footer{
     @include flex();
     margin-top: 20px;
