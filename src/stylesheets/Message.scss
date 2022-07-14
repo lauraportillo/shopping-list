@@ -21,3 +21,17 @@
     margin-top: 20px;
     width: 150px;
 }
+
+
+@media all and (min-width: 768px) {
+
+    .containerMessage__title,
+    .containerMessage__subtitle{
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    .containerMessage__img{
+        margin-top: 50px;
+        width: 300px;
+    }
+}
