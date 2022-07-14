@@ -7,32 +7,28 @@
   font-size: 12px;
   font-family: $typo2;
   font-weight: 200;
-}
-.footer__item {
-  text-transform: uppercase;
-  margin-left: 5px;
-  margin-right: 5px;
+  @media (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  &__item {
+    text-transform: uppercase;
+    margin-left: 5px;
+    margin-right: 5px;
+    @media (min-width: 768px) {
+      margin-left: 8px;
+      margin-right: 8px; 
+    }
+  }
 }
 
 .icon {
   color: $color9;
-}
-
-.icon:hover {
-  color: $color6;
-  transform: scale(1.2);
-  transition: all 0.1s ease-in-out;
-}
-
-@media all and (min-width: 768px) {
-  .footer {
-    margin-bottom: 30px;
-  }
-  .icon {
+  @media (min-width: 768px) {
     font-size: 16px;
   }
-  .footer__item {
-    margin-left: 8px;
-    margin-right: 8px;
+  &:hover {
+    color: $color6;
+    transform: scale(1.2);
+    transition: all 0.1s ease-in-out;
   }
 }
