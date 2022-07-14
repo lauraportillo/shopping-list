@@ -23,7 +23,7 @@ function ListPrinted({ referent, items }) {
             <HeaderPrinted />
             <main>
             <ul className="containerListItemPrinted__list">{renderItem()}</ul>
-            <div className="containerListItem__total">Total different items: {items.length}</div>
+                <div className="containerListItemPrinted__total">Total different items: {items.length}</div>
             </main>
             <footer className="containerListItemPrinted__footer">
                 <p className="containerListItemPrinted__footer--text">Printed on</p>
