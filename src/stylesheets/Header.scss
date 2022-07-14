@@ -4,32 +4,26 @@
 .containerHeader{
     @include flexColumn();
     margin-top: 20px;
-}
-
-.containerHeader__title{
-    @include flexColumn();
-    margin-top: 10px;
-    
-}
-.containerHeader__title--title{
-    color: $color1;
-    font-family: $typo1;
-    font-size: 35px;
-}
-.containerHeader__title--subtitle{
-    color: $color4;
-    font-family: $typo3;
-}
-
-// RESPONSIVE
-@media all and (min-width: 768px) {
-    .containerHeader__title{
-        margin-top: 30px; 
+    &__title{
+        @include flexColumn();
+        margin-top: 10px;
+        @media (min-width: 768px) {
+            margin-top: 30px; 
+        }
+        &--title{
+            color: $color1;
+            font-family: $typo1;
+            font-size: 35px;
+            @media (min-width: 768px) { 
+                font-size: 50px;
+            }
+        }
+        &--subtitle{
+            color: $color4;
+            font-family: $typo3;
+            @media (min-width: 768px) { 
+                font-size: 18px;
+            }
     }
-    .containerHeader__title--title{
-        font-size: 50px;
-    }
-    .containerHeader__title--subtitle{
-        font-size: 18px;
-    }
+}   
 }
