@@ -5,33 +5,30 @@
     @include flexColumn();
     margin-top: 20px;
     width: 280px;
-}
-
-.containerMessage__subtitle{
-    margin-top: 10px;
-}
-
-.containerMessage__bold{
-    color: $color6B;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.containerMessage__img{
-    margin-top: 20px;
-    width: 150px;
-}
-
-
-@media all and (min-width: 768px) {
-
-    .containerMessage__title,
-    .containerMessage__subtitle{
-      font-size: 16px;
-      margin-top: 10px;
+    &__title{
+        @media (min-width: 768px) {
+            font-size: 16px;
+            margin-top: 10px;
+        }
     }
-    .containerMessage__img{
-        margin-top: 50px;
-        width: 300px;
+    &__subtitle{
+        margin-top: 10px;
+        @media (min-width: 768px) {
+            font-size: 16px;
+            margin-top: 10px;
+        }
     }
+    &__bold{
+        color: $color6B;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    &__img{
+        margin-top: 20px;
+        width: 150px;
+        @media (min-width: 768px) {
+            margin-top: 50px;
+            width: 300px;
+        }
+    }  
 }
