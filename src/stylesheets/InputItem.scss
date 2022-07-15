@@ -4,42 +4,35 @@
 .containerInputItem{
     @include flex();
     margin-top: 5px;
-}
-
-.containerInputItem__input{
-    background-color: inherit;
-    border-style: solid;
-    border-color: $color6;
-    border-radius: 20px;
-    color: $color1;
-    padding-left: 15px;
-    width: 220px;
-    height: 35px;
-    outline: none;
-}
-
-.containerInputItem__icon{
-    @include flex();
-    background-color: $color6;
-    border-radius: 20px;
-    width: 50px;
-    height: 35px;
-    outline: none;
-    margin-left: 5px;
-    cursor: pointer;
-}
-
-  // RESPONSIVE
-  @media all and (min-width: 768px) {
-    .containerInputItem__input{
-        font-size: 16px;
-        padding-left: 20px;
-        width: 400px;
-        height: 40px;
+    &__input{
+        background-color: inherit;
+        border-style: solid;
+        border-color: $color6;
+        border-radius: 20px;
+        color: $color1;
+        padding-left: 15px;
+        width: 220px;
+        height: 35px;
+        outline: none;
+        @media (min-width: 768px) { 
+            font-size: 16px;
+            padding-left: 20px;
+            width: 400px;
+            height: 40px;
+        }
     }
-    
-    .containerInputItem__icon{
-        width: 70px;
-        height: 40px;
-    }
-  }
+    &__icon{
+        @include flex();
+        background-color: $color6;
+        border-radius: 20px;
+        width: 50px;
+        height: 35px;
+        outline: none;
+        margin-left: 5px;
+        cursor: pointer;
+        @media (min-width: 768px) { 
+            width: 70px;
+            height: 40px;
+        }
+    }   
+}
