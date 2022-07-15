@@ -11,39 +11,37 @@
     text-transform: capitalize;
 }
 
-// left
 .containerItemLeft{
     @include flexStart();
     margin-left: 20px;
-}
-.containerItemLeft__name{
-    margin-left: 5px;
-}
-.containerItemLeft__icon{
-    cursor: pointer;
+    &__name{
+        margin-left: 5px;
+    }
+    &__icon{
+        cursor: pointer;
+    }
 }
 
-// right
 .containerItemRight{
     @include flex();
     margin-right: 20px;
-}
-.containerItemRight__counter{
-    background-color: $color5;
-    border-radius: 20px;
-    padding:  3px 10px 3px 10px;
-}
-.containerItemRight__counter--btnL{
-    @include btn();
-    margin-right: 5px;   
-}
-.containerItemRight__counter--btnR{
-    @include btn();
-    margin-left: 5px;
-}
-.containerItemRight__deleteBtn{
-    @include btn();
-    margin-left: 10px;
+    &__counter{
+        background-color: $color5;
+        border-radius: 20px;
+        padding:  3px 10px 3px 10px;
+        &--btnL{
+            @include btn();
+            margin-right: 5px;
+        }  
+        &--btnR{
+            @include btn();
+            margin-left: 5px;   
+        }  
+    }
+    &__deleteBtn{
+        @include btn();
+        margin-left: 10px;
+    }
 }
 
 
