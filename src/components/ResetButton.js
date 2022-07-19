@@ -12,7 +12,7 @@ const ResetButton = (props) => {
 
   const showAlert = () => {
     swal({
-      title: 'Deleting shopping list',
+      title: 'Delete list',
       text: 'Sure about this?',
       icon: 'warning',
       buttons: ['No', 'Yes']
