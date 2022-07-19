@@ -17,9 +17,9 @@ const ResetButton = (props) => {
       icon: 'warning',
       showDenyButton: true,
       denyButtonText: 'No',
-      denyButtonColor: '#3085d6',
+      denyButtonColor: '#bababa',
       confirmButtonText: 'Yes',
-      confirmButtonColor: '#3085d6'
+      confirmButtonColor: '#df4a64'
     }).then((result) => {
       if (result.isConfirmed) {
         handleReset();
