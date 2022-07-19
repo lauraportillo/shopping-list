@@ -25,14 +25,12 @@ const ResetButton = (props) => {
         handleReset();
         Swal.fire({
           text: 'Shoping list deleted',
-          icon: 'success'
+          icon: 'success',
+          confirmButtonColor: '#7a9d27'
         })
       }
     })
-
   }
-
-
 
   return (
     <>
