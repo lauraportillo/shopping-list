@@ -26,7 +26,8 @@ const ResetButton = (props) => {
         Swal.fire({
           text: 'Shoping list deleted',
           icon: 'success',
-          confirmButtonColor: '#7a9d27'
+          confirmButtonColor: '#7a9d27',
+          timer: 2500
         })
       }
     })
