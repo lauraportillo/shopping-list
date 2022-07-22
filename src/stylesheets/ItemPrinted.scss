@@ -9,14 +9,14 @@
     padding:  5px 0px 5px 0px;
     width: 280px;
     text-transform: capitalize;
+    &__quantity{
+        margin-left: 20px;
+        background-color: $color5;
+        border-radius: 20px;
+        padding: 3px 20px 3px 20px;
+    }
+    &__name{
+        margin-left: 10px;
+    }
 
-}
-.containerItemPrinted__quantity{
-    margin-left: 20px;
-    background-color: $color5;
-    border-radius: 20px;
-    padding: 3px 20px 3px 20px;
-}
-.containerItemPrinted__name{
-    margin-left: 10px;
 }
