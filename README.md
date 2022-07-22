@@ -6,16 +6,13 @@ Practicing **React.JS**
 
 
 
-## Responsive design :iphone: :computer:
-Development using mediaqueries and mobile first strategy
+## Responsive Design 
 
 ### Mobile 
-<img src="https://github.com/lauraportillo/shopping-list/blob/master/src/images/mobileLanding.JPG" width="200"> 
-<img src="https://github.com/lauraportillo/shopping-list/blob/master/src/images/mobileList.JPG" width="200"> 
+<img src="https://github.com/lauraportillo/shopping-list/blob/master/src/images/mobileLanding.JPG" width="200"> <img src="https://github.com/lauraportillo/shopping-list/blob/master/src/images/mobileList.JPG" width="200"> 
 
 ### Tablet
-<img src="https://github.com/lauraportillo/shopping-list/blob/master/src/images/tabletLanding.JPG" width="300"> 
-<img src="https://github.com/lauraportillo/shopping-list/blob/master/src/images/tabletList.JPG" width="300"> 
+<img src="https://github.com/lauraportillo/shopping-list/blob/master/src/images/tabletLanding.JPG" width="300"> <img src="https://github.com/lauraportillo/shopping-list/blob/master/src/images/tabletList.JPG" width="300"> 
 
 
 
